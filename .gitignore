@@ -1,0 +1,14 @@
+# Include only files used by the public portfolio site.
+*
+!.gitignore
+!README.md
+!index.html
+!style.css
+!script.js
+!Oct 2026 Professional Resume (1).pdf
+!WhatsApp Image 2024-08-04 at 6.43.45 PM.jpeg
+!assets/
+assets/*
+!assets/1 jo pream gali me aaya hi nahi.jpg
+!assets/2 RJD.jpg
+!assets/Book Cover .jpg
