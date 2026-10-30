@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#173b30">
   <meta name="description" content="Akshay Kumar — video editor, creative designer and app developer from Patna, Bihar.">
   <title>Akshay Kumar — Video Editor &amp; Creative Designer</title>
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" as="image" href="WhatsApp%20Image%202024-08-04%20at%206.43.45%20PM.jpeg">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -16,7 +17,7 @@
     <nav class="nav wrap" aria-label="Main navigation">
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span><span class="menu-label">MENU</span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#about">About</a><a href="#experience">Experience</a><a href="#portfolio">Video Projects</a><a href="#design-work">Creative Works</a><a href="#apps">My Apps</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#portfolio">Video Projects</a><a href="#design-work">Creative Works</a><a href="#contact">Contact</a>
       </div>
       <a class="nav-cta" href="Oct%202026%20Professional%20Resume%20(1).pdf" download>Download CV <span aria-hidden="true">↓</span></a>
     </nav>
@@ -65,7 +66,7 @@
 
         <div class="overview-column overview-right">
           <section class="overview-card experience-card" id="experience" aria-labelledby="experience-title">
-            <div class="overview-heading"><div><p class="eyebrow">03 / WORK HISTORY</p><h2 id="experience-title">Experience<span class="period">.</span></h2></div><span class="cv-mark">CV</span></div>
+            <div class="overview-heading"><div><p class="eyebrow">03 / WORK HISTORY</p><h2 id="experience-title">Experience<span class="period">.</span></h2></div></div>
             <div class="compact-timeline">
               <article class="compact-job"><span class="job-date">Feb 2026 - Oct 2026</span><div><h3>Video Editor</h3><span>Teach Mania · Patna</span><p>Educational video editing.</p></div></article>
               <article class="compact-job"><span class="job-date">AUG 2025 — DEC 2025</span><div><h3>Video Editor</h3><span>Devout Growth · Patna</span><p>Political video editing.</p></div></article>
@@ -97,39 +98,116 @@
 
     <section class="portfolio section-cream" id="portfolio">
       <div class="wrap">
-        <div class="section-heading section-heading-dark"><div><p class="eyebrow">06 / VIDEO EDITING</p><h2>Video Projects</h2></div><p>Project summaries based on the work<br>described in my CV.</p></div>
+        <div class="section-heading section-heading-dark"><div><p class="eyebrow">06 / VIDEO EDITING</p><h2>Video Projects</h2></div></div>
         <div class="video-specialties"><span>EDUCATIONAL VIDEOS</span><span>POLITICAL EDITING</span><span>PRODUCT PROMOS</span><span>REELS &amp; SHORTS</span><span>MOTION GRAPHICS</span><span>COLOR GRADING</span></div>
         <article class="drive-video-card drive-featured">
-          <div class="drive-video-heading"><div><span class="project-category">FEATURED VIDEO · 16:9</span><h3>Video Editing Showcase</h3></div><span class="drive-badge">GOOGLE DRIVE PLAYER</span></div>
-          <div class="drive-frame drive-frame-wide"><iframe src="https://drive.google.com/file/d/1mDqTAOkiEw7qnaJvez0LeTJznugwtmli/preview" title="Featured portfolio video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <div class="drive-video-heading"><div><span class="project-category">FEATURED VIDEO · 16:9</span><h3>Video Editing Showcase</h3></div></div>
+          <div class="video-player" data-orientation="landscape" tabindex="0" role="group" aria-label="Video Editing Showcase player">
+            <div class="drive-frame video-viewport">
+              <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="Video Editing Showcase" poster="assets/1%20HOLI%20ISLAND%2026.03.23.jpg" src="assets/1%20HOLI%20ISLAND%2026.03.23.mp4">Your browser does not support HTML5 video.</video>
+              <button class="video-start-button" type="button" data-video-start aria-label="Play Video Editing Showcase"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+              <div class="video-controls" role="group" aria-label="Video Editing Showcase controls" hidden></div>
+            </div>
+            <p class="video-error" role="status" aria-live="polite" hidden></p>
+          </div>
         </article>
         <div class="drive-reels">
-          <article class="drive-video-card"><div class="drive-video-heading"><div><span class="project-category">REEL 01 · 9:16</span><h3>Short-form Edit</h3></div><span class="drive-badge">REEL</span></div><div class="drive-frame drive-frame-reel"><iframe src="https://drive.google.com/file/d/1DS4fL1r8mFBbhEbYAlcXfZuW8Vl3K2Y2/preview" title="First vertical reel" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
-          <article class="drive-video-card"><div class="drive-video-heading"><div><span class="project-category">REEL 02 · 9:16</span><h3>Short-form Edit</h3></div><span class="drive-badge">REEL</span></div><div class="drive-frame drive-frame-reel"><iframe src="https://drive.google.com/file/d/1lNZmhbwcFJ0GrVl_BAv-C2LJ5aT4EqY8/preview" title="Second vertical reel" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></article>
+          <article class="drive-video-card">
+            <div class="drive-video-heading"><div><span class="project-category">REEL 01 · 9:16</span></div></div>
+            <div class="video-player" data-orientation="portrait" tabindex="0" role="group" aria-label="First vertical reel player">
+              <div class="drive-frame video-viewport">
+              <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="First vertical reel" poster="assets/1%20Congress%20for%20Bihar.jpg" src="assets/1%20Congress%20for%20Bihar.mp4">Your browser does not support HTML5 video.</video>
+                <button class="video-start-button" type="button" data-video-start aria-label="Play first vertical reel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                <div class="video-controls" role="group" aria-label="First vertical reel controls" hidden></div>
+              </div>
+              <p class="video-error" role="status" aria-live="polite" hidden></p>
+            </div>
+          </article>
+          <article class="drive-video-card">
+            <div class="drive-video-heading"><div><span class="project-category">REEL 02 · 9:16</span></div></div>
+            <div class="video-player" data-orientation="portrait" tabindex="0" role="group" aria-label="Second vertical reel player">
+              <div class="drive-frame video-viewport">
+                <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="Second vertical reel" poster="assets/01%20Remove%20background%20in%20video%20(1).jpg" src="assets/01%20Remove%20background%20in%20video%20(1).mp4">Your browser does not support HTML5 video.</video>
+                <button class="video-start-button" type="button" data-video-start aria-label="Play second vertical reel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                <div class="video-controls" role="group" aria-label="Second vertical reel controls" hidden></div>
+              </div>
+              <p class="video-error" role="status" aria-live="polite" hidden></p>
+            </div>
+          </article>
         </div>
-        <div class="portfolio-note"><span class="note-line"></span><p>Videos are embedded using Google Drive preview. Playback depends on the file owner’s sharing permissions and Google Drive availability.</p></div>
+        <article class="drive-video-card drive-featured">
+          <div class="drive-video-heading"><div><span class="project-category">EDUCATIONAL VIDEO</span></div></div>
+          <div class="video-player" data-orientation="landscape" tabindex="0" role="group" aria-label="Educational video player">
+            <div class="drive-frame video-viewport">
+              <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="Educational video" poster="assets/2%20Elite%20IAS%20Academy%20%202.jpg" src="assets/2%20Elite%20IAS%20Academy%20%202.mp4">Your browser does not support HTML5 video.</video>
+              <button class="video-start-button" type="button" data-video-start aria-label="Play educational video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+              <div class="video-controls" role="group" aria-label="Educational video controls" hidden></div>
+            </div>
+            <p class="video-error" role="status" aria-live="polite" hidden></p>
+          </div>
+        </article>
+        <div class="drive-reels new-reels" aria-label="New Reels">
+          <article class="drive-video-card">
+            <div class="drive-video-heading"><div><span class="project-category">SHORTS · 00:12</span></div></div>
+            <div class="video-player" data-orientation="portrait" tabindex="0" role="group" aria-label="Short reel player">
+              <div class="drive-frame video-viewport">
+                <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="Short reel" poster="assets/5bbs.jpg" src="assets/5bbs.mp4">Your browser does not support HTML5 video.</video>
+                <button class="video-start-button" type="button" data-video-start aria-label="Play short reel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                <div class="video-controls" role="group" aria-label="Short reel controls" hidden></div>
+              </div>
+              <p class="video-error" role="status" aria-live="polite" hidden></p>
+            </div>
+          </article>
+          <article class="drive-video-card">
+            <div class="drive-video-heading"><div><span class="project-category">SHORTS · 00:38</span></div></div>
+            <div class="video-player" data-orientation="portrait" tabindex="0" role="group" aria-label="Short reel player">
+              <div class="drive-frame video-viewport">
+                <video class="portfolio-video" playsinline webkit-playsinline preload="metadata" aria-label="Short reel" poster="assets/Class_12_BST_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%87_Marks_%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F_%E0%A4%AC%E0%A4%B8_%E0%A4%AF%E0%A5%87_1_Video_%E0%A4%A6%E0%A5%87%E0%A4%96_%E0%A4%B2%E0%A5%8B%21_%F0%9F%94%A5%20%281%29.jpg" src="assets/Class_12_BST_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%87_Marks_%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F_%E0%A4%AC%E0%A4%B8_%E0%A4%AF%E0%A5%87_1_Video_%E0%A4%A6%E0%A5%87%E0%A4%96_%E0%A4%B2%E0%A5%8B%21_%F0%9F%94%A5%20%281%29.mov">Your browser does not support HTML5 video.</video>
+                <button class="video-start-button" type="button" data-video-start aria-label="Play short reel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+                <div class="video-controls" role="group" aria-label="Short reel controls" hidden></div>
+              </div>
+              <p class="video-error" role="status" aria-live="polite" hidden></p>
+            </div>
+          </article>
+        </div>
+        <template id="video-control-template">
+          <div class="video-timeline" data-video-seek role="slider" tabindex="0" aria-label="Seek video" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="00:00 of --:--">
+            <span class="video-timeline-buffered" data-buffered-progress></span>
+            <span class="video-timeline-played" data-played-progress></span>
+            <span class="video-timeline-thumb" aria-hidden="true"></span>
+          </div>
+          <div class="video-action-row">
+            <button class="video-icon-button" type="button" data-action="play" aria-label="Play video" title="Play video"></button>
+            <span class="video-time" aria-live="off"><span data-current-time>00:00</span><span class="video-time-divider">/</span><span data-duration>--:--</span></span>
+            <button class="video-icon-button" type="button" data-action="mute" aria-label="Mute video" title="Mute video" aria-pressed="false"></button>
+            <input class="video-volume-range" data-video-volume type="range" min="0" max="1" step="0.01" value="1" aria-label="Video volume">
+            <button class="video-icon-button" type="button" data-action="fullscreen" aria-label="Enter fullscreen" title="Enter fullscreen" aria-pressed="false"></button>
+          </div>
+        </template>
       </div>
     </section>
 
     <section class="design-work section-light" id="design-work">
       <div class="wrap design-gallery-wrap">
-        <div class="section-heading section-heading-dark design-gallery-heading"><div><p class="eyebrow">07 / THUMBNAIL DESIGN</p><h2>Creative Works</h2></div><p>Three design assets shared from Google Drive.</p></div>
-        <figure class="design-image design-image-featured"><img src="assets/1%20jo%20pream%20gali%20me%20aaya%20hi%20nahi.jpg" alt="Featured thumbnail design: Jo Prem Gali Me Aaya Nahi" loading="eager" fetchpriority="high"><figcaption><span>FEATURED THUMBNAIL</span><a href="https://drive.google.com/file/d/1jIBWg88J3mAK13qLE8NdhlWulTfylcCL/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open original ↗</a></figcaption><p class="design-image-fallback" role="status">Image could not be loaded. Check that the local asset path is correct.</p></figure>
-        <div class="creative-grid" aria-label="Creative design gallery">
-          <figure class="design-image"><img src="assets/2%20RJD.jpg" alt="Creative design: Bihar Ko Chahiye Surakshit Kal" loading="eager"><figcaption><span>CREATIVE DESIGN 02</span><a href="https://drive.google.com/file/d/18cG-HC2NGCFNlnserb01CyQe4ocjodBB/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open original ↗</a></figcaption><p class="design-image-fallback" role="status">Image could not be loaded. Check that the local asset path is correct.</p></figure>
-          <figure class="design-image"><img src="assets/Book%20Cover%20.jpg" alt="Creative design: 14th UPSC Mains GS Paper V book cover" loading="eager"><figcaption><span>CREATIVE DESIGN 03</span><a href="https://drive.google.com/file/d/10736DifPXjKc2uG_MMqFTmTQbbivgLgy/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open original ↗</a></figcaption><p class="design-image-fallback" role="status">Image could not be loaded. Check that the local asset path is correct.</p></figure>
+        <div class="section-heading section-heading-dark design-gallery-heading"><div><p class="eyebrow">07 / THUMBNAIL DESIGN</p><h2>Creative Works</h2></div><p>Selected graphic and Illustrator work.</p></div>
+        <div class="creative-grid" aria-label="Graphic and Illustrator work">
+          <figure class="design-image"><img src="assets/2%20RJD.jpg" alt="RJD" loading="lazy"></figure>
+          <figure class="design-image"><img src="assets/4%20(1).png" alt="Rose Global Marketing work-from-home poster" loading="lazy"></figure>
+          <figure class="design-image"><img src="assets/Book%20Cover%20.jpg" alt="Creative design: 14th UPSC Mains GS Paper V book cover" loading="lazy"></figure>
+          <figure class="design-image"><img src="assets/4GURU%20NANAK%20ENTERPRISES%20poster2.jpg" alt="Creative design: Guru Nanak Enterprises poster" loading="lazy"></figure>
+          <figure class="design-image"><img src="assets/1%20jo%20pream%20gali%20me%20aaya%20hi%20nahi.jpg" alt="Featured thumbnail design: Jo Prem Gali Me Aaya Nahi" loading="eager"></figure>
+          <figure class="design-image"><img src="assets/1%20Bhajan.jpg" alt="Bhajan" loading="eager" fetchpriority="high"></figure>
+          <figure class="design-image"><img src="assets/2%20anushaka-1.jpg" alt="Anushaka-1" loading="lazy"></figure>
+          <figure class="design-image design-pdf-project">
+            <h3 class="design-pdf-title">Illustrator Work</h3>
+            <a class="design-pdf-link" href="assets/RADHA%20KRISHNA%20COFFEE%20SHOP.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the full RADHA KRISHNA COFFEE SHOP PDF in a new tab">
+              <img src="assets/images/radha-krishna-coffee-shop-preview.jpg" alt="RADHA KRISHNA COFFEE SHOP" loading="lazy">
+            </a>
+          </figure>
         </div>
-        <p class="design-project-note">Your CV also lists thumbnail design for Sarthi Music and Bapu Records. Their specific artwork files were not included in these three links.</p>
       </div>
     </section>
 
-    <section class="more-videos section-dark" id="more-videos">
-      <div class="wrap more-videos-inner"><div><p class="eyebrow">08 / MORE VIDEOS</p><h2>More work,<br><em>when available.</em></h2><p>Three additional Google Drive video links were requested, but only the featured video and two reels were present in the existing project. Add the remaining links when available; no links have been duplicated here.</p></div><div class="more-video-slots" aria-label="Three additional video links needed"><div><span>01</span><strong>Additional video link needed</strong></div><div><span>02</span><strong>Additional video link needed</strong></div><div><span>03</span><strong>Additional video link needed</strong></div></div></div>
-    </section>
-
-    <section class="apps section-dark" id="apps">
-      <div class="wrap apps-layout"><div class="apps-copy"><p class="eyebrow">09 / APP DEVELOPMENT</p><h2>Ideas, built<br><em>into tools.</em></h2><p>App development is part of my creative practice. Cyber AI is a project name you’ve shared; no application files or verified description are present in this folder yet.</p></div><article class="app-card"><div class="app-top"><span class="app-icon">C<span>✳</span></span><span class="app-status"><i></i> PROJECT PLACEHOLDER</span></div><div class="app-content"><span class="project-category">APP PROJECT</span><h3>Cyber AI</h3><p>Project details, repository and download will appear here when the app files and destinations are available.</p></div><div class="app-bottom"><span>DETAILS TO COME</span><span>↗</span></div></article></div>
-    </section>
   </main>
 
   <footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#home">Akshay Kumar</a><span class="footer-copy">© <span id="year"></span> AKSHAY KUMAR</span><div class="footer-links"><a href="#top">Back to top ↑</a><a href="https://github.com/aksinghforediting" target="_blank" rel="noopener">GitHub ↗</a></div></div></footer>
